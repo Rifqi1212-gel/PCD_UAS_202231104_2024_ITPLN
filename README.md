@@ -1,4 +1,38 @@
 # PCD_UAS_202231104_2024_ITPLN
+# Teori Pendukung 
+Geometrix pada pengolahan citra digital adalah cabang ilmu yang mempelajari sifat dan perubahan geometris gambar. Beberapa konsep teori yang mendasari geometrix dalam pengolahan citra digital meliputi:
+
+1. Transformasi Geometris
+Transformasi geometris adalah operasi yang mengubah posisi, orientasi, atau ukuran objek dalam gambar. Jenis-jenis transformasi geometris meliputi:
+
+Translasi: Memindahkan objek sejauh vektor tertentu tanpa mengubah bentuk atau orientasi.<br>
+Rotasi: Memutar objek di sekitar titik tertentu.<br>
+Skalasi: Mengubah ukuran objek secara proporsional atau tidak proporsional.<br>
+Refleksi: Membalik objek terhadap sumbu tertentu.<br>
+Shear: Menggeser bagian objek searah sumbu x atau y, yang mengubah bentuk tetapi tidak mengubah luas.<br>
+
+3. Interpolasi
+Pada transformasi geometris, sering kali diperlukan interpolasi untuk menentukan nilai piksel baru. Jenis-jenis interpolasi meliputi:
+
+Nearest Neighbor: Menentukan nilai piksel baru dengan nilai piksel terdekat.<br>
+Bilinear Interpolation: Menghitung nilai piksel baru berdasarkan rata-rata tertimbang dari piksel-piksel di sekitarnya.<br>
+Bicubic Interpolation: Menggunakan lebih banyak tetangga piksel untuk menghitung nilai baru, menghasilkan hasil yang lebih halus.<br>
+4. Homografi
+Homografi adalah transformasi perspektif yang menggambarkan hubungan antara dua gambar dari bidang yang sama. Homografi digunakan dalam registrasi gambar, mosaicking, dan rekonstruksi 3D.
+
+5. Pendeteksian dan Pencocokan Fitur
+Fitur-fitur penting dalam gambar, seperti titik sudut atau tepi, dapat dideteksi dan dicocokkan antara dua gambar untuk memahami transformasi geometris yang terjadi. Algoritma yang sering digunakan meliputi:
+
+Harris Corner Detector
+SIFT (Scale-Invariant Feature Transform)
+SURF (Speeded-Up Robust Features)
+6. Kalibrasi Kamera
+Kalibrasi kamera melibatkan penentuan parameter intrinsik dan ekstrinsik kamera untuk mengoreksi distorsi dan memahami hubungan geometris antara dunia 3D dan gambar 2D.
+
+7. Model Geometris 3D
+Model geometris 3D digunakan dalam aplikasi seperti rekonstruksi 3D, pengenalan bentuk, dan analisis objek. Teknik seperti triangulasi dan pemetaan stereo digunakan untuk membangun model 3D dari gambar 2D.
+
+
 # Import Library 
 ```pyton
 import cv2
